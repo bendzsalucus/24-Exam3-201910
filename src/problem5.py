@@ -2,7 +2,7 @@
 Final exam, problem 2.
 
 Authors: David Mutchler, Dave Fisher, Matt Boutell, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.  May 2018.
+         their colleagues and Luucs Bendzsa.  May 2018.
 
 """  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
@@ -216,6 +216,15 @@ def problem5(x):
     # TODO: 2. Implement and test this function.
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
+
+    for j in range(100000000):
+            x = x + j
+            c = sum_of_digits(x)
+            e = is_prime(c)
+            d = is_prime(x)
+            if e == True and d == True:
+                return x
+
 
 
 ###############################################################################

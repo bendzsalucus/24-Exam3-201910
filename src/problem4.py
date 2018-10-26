@@ -2,7 +2,7 @@
 Exam 3, problem 4.
 
 Authors: David Mutchler, Dave Fisher, Matt Boutell, their colleagues,
-         and PUT_YOUR_NAME_HERE.  October, 2018.
+         and Lucus Bendzsa.  October, 2018.
 """  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 
@@ -84,6 +84,10 @@ And this one for n=14:
     #   you must NOT use string multiplication.
     ####################################################################
 
+    for i in range(n):
+        for j in range(n):
+            print(j + 1, '*' * (j + 2), (n - j), end = '')
+            print()
 
 # ----------------------------------------------------------------------
 # Calls  main  to start the ball rolling.

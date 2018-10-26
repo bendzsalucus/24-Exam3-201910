@@ -2,7 +2,7 @@
 Exam 3, problem 2.
 
 Authors: David Mutchler, Dave Fisher, Matt Boutell, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.  October 2018.
+         their colleagues and Lucus Bendzsa.  October 2018.
 
 """  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
@@ -70,8 +70,8 @@ def run_test_problem2():
 
     # SUMMARY of the test results:
     print_summary_of_test_results(test_results)
-    
-    
+
+
 def problem2(sequence):
     """
     What comes in:
@@ -93,6 +93,19 @@ def problem2(sequence):
     # TODO: 2. Implement and test this function.
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
+    a = 0
+    for k in range(len(sequence)):
+        for j in range(len(sequence)):
+            if sequence[k] < 0:
+                sequence[k] = sequence[k] * -1
+            if sequence[j] < 0:
+                sequence[k] = sequence[k] * -1
+
+            if sequence[k] > sequence[k - j]:
+                a = sequence[k]
+    return a
+
+
 
 
 ###############################################################################

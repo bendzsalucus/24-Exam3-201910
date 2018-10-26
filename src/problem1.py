@@ -2,9 +2,9 @@
 Exam 3, problem 1.
 
 Authors: David Mutchler, Dave Fisher, Matt Boutell, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.  October 2018.
+         their colleagues and Lucus Bendzsa.  October 2018.
 
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+"""  # Done: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import time
 import testing_helper
@@ -89,6 +89,16 @@ def problem1(numbers):
     # TODO: 2. Implement and test this function.
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
+
+    total = 0
+    nummy = len(numbers) / 3 - 1
+    print(nummy)
+    dummy = len(numbers) - nummy - 1
+    print(dummy)
+    for k in range(len(numbers)):
+        if k > nummy and k < dummy:
+            total = total + numbers[k]
+    return total
 
 
 ###############################################################################
